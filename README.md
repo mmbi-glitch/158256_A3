@@ -1,5 +1,6 @@
 # 158256_A3
 Designing an appealing and functional website using only vanilla HTML, CSS, and JS.
+Based on an indie game called [Spindle](https://www.kickstarter.com/projects/letsgamedev/spindle-an-action-adventure-about-the-death-and-a-pig/posts/3803589).
 ## Massey University Disclaimer
 This is a submission for an assignment for the Massey University course 158.256 - Web Application Design. Under no circumstances is it to be copied and submitted anywhere as plagiarised work.
 ## Assignment Requirements (in Brief)
