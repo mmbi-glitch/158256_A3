@@ -16,3 +16,6 @@ Site requirements:
 - One or more forms that contain at least 4 fields.
 - When the form submit button is pressed, the form data plus current timestamp is saved to localStorage (JS backend stuff).
 ## Screenshots
+![Home page](home-page.png)
+![About us - teams page](about-team-page.png)
+![Features page](features-page.png)
