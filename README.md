@@ -10,7 +10,7 @@ Site requirements:
 - A table, utilizing data effectively.
 - All formatting done via CSS using external stylesheets.
 - No inline, embedded styles allowed (good code practice).
-- No third-party libraries allowed.
+- Use of third-party libraries or web frameworks not allowed.
 - A Google map centred on a city.
 - One or more forms that contain at least 4 fields.
 - When the form submit button is pressed, the form data plus current timestamp is saved to localStorage (JS backend stuff).
