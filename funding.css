@@ -1,0 +1,202 @@
+body {
+    background: black;
+}
+
+.main-body_wrapper {
+    background: black;
+}
+
+#funding-section {
+    background: #0B1420;
+    padding: 2rem 0 3rem 0;
+}
+
+#funding-section_wrapper > img {
+    display: block;
+    max-width: 60%;
+    padding: 2% 0 4% 0;
+    margin: 3% auto;
+}
+
+#funding-section_wrapper > p {
+    color: ghostwhite;
+    text-align: center;
+    margin: 20px 0;
+    line-height: 2em;
+    max-width: 50ch;
+    padding: 0 20px;
+}
+
+#plans-section_wrapper {
+    border: 5px solid black;
+    padding: 80px 50px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.responsive-table {
+    display: table;
+    border-collapse: collapse;
+    max-width: 100%;
+}
+
+.table-caption {
+    display: table-caption;
+    text-align: center;
+}
+
+.table-head {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+thead > tr:first-child, .table-head > .table-row:first-child {
+    background: white;
+    border-left: 2px solid #53BDF6;
+}
+
+thead > tr, .table-head > .table-row {
+    border-top: 2px solid #53BDF6;
+    background: white;
+    border-right: 2px solid #53BDF6;
+    border-bottom: 2px solid #53BDF6;
+}
+
+th, .table-header {
+    display: table-cell;
+    padding: 10px 20px;
+    vertical-align: inherit;
+    font-weight: bold;
+    text-align: center;
+    border-right: 2px solid #53BDF6;
+}
+
+.table-header:nth-child(4) {
+    border-right: none;
+}
+
+.table-body {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+.table-row {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+td, .table-cell {
+    display: table-cell;
+    padding: 10px 20px;
+    vertical-align: inherit;
+    text-align: center;
+    border-right: 2px solid #53BDF6;
+    font-weight: bold;
+}
+
+tr:nth-child(odd), .table-row:nth-child(odd) {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+td:first-child, .table-cell:first-child {
+    border-left: 2px solid #53BDF6;
+    font-weight: bolder;
+}
+
+.last-row {
+    border-bottom: 3px solid #53BDF6;
+}
+
+#mobile-table {
+    display: none;
+}
+
+.aspect-ratio-container {
+    margin: 5%;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px 7px rgba(83, 189, 246,0.82);
+    -webkit-box-shadow: 1px 1px 10px 7px rgba(83, 189, 246,0.82);
+    -moz-box-shadow: 1px 1px 10px 7px rgba(83, 189, 246,0.82);
+}
+
+
+@media screen and (max-width: 1024px) {
+    #plans-section_wrapper {
+        display: none;
+    }
+    #mobile-table {
+        display: table;
+        color: black;
+        margin: 0 5%;
+    }
+    .table-header {
+        padding: 0;
+    }
+    .table-header > p {
+        padding: 0;
+    }
+    .table-row {
+        border-right: 2px solid #53BDF6;
+    }
+    #mobile-first-row {
+        border-top: none;
+    }
+    .table-cell:nth-child(4) {
+        border-right: none;
+    }
+    .bg-text {
+        position: relative;
+        border-top: 2px solid #53BDF6;
+        border-bottom: 2px solid #53BDF6;
+    }
+    .bg-text:after {
+        font-weight: bold;
+        position: absolute;
+        left: 50%;
+        margin-left: -90px;
+        top: 50%;
+        margin-top: -20px;
+        z-index: 100;
+    }
+    .text-1:after {
+        content: "Discord Role: Backer";
+    }
+    .text-2:after {
+        content: "No. of Game Keys";
+    }
+    .text-3:after {
+        content: "In-Game Book Entry";
+    }
+    .text-4:after {
+        content: "Access to Soundtrack";
+    }
+    .text-5:after {
+        content: "Early Bird Access";
+    }
+    .hidden-text {
+        color: rgba(0, 0, 0, 0.0);
+        border-right: none;
+    }
+}
+
+#help-section {
+    background: #0B1420;
+    padding: 2rem 0 3rem 0;
+}
+#help-section_wrapper {
+    max-width: 1920px;
+    justify-self: center;
+    align-self: center;
+}
+#help-section_wrapper > img {
+    display: block;
+    margin: 5% auto 0 auto;
+    padding: 5% 0;
+    max-width: 70%;
+}

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@500;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="basic_styles.css">
+    <link rel="stylesheet" href="home_styles.css">
+    <link rel="stylesheet" href="mobile_styles.css">
+    <link rel="icon" href="icons/favicon.ico">
+    <script src="verifyEmail.js"></script>
+    <script src="mobileMenu.js"></script>
+    <title>SPINDLE - Home</title>
+</head>
+<body>
+    <header class="site-header">
+        <div class="site-header_wrapper">
+            <a href="#" id="logo_link">
+                <img src="icons/spindle_logo.png" alt="spindle logo" width="158" height="44"/>
+            </a>
+            <span id="side-nav_divider">|</span>
+            <ul id="mobile_button" onclick="toggleMobileNav()">
+                <li id="first-bar">&mdash;</li>
+                <li id="second-bar">&mdash;</li>
+                <li id="third-bar">&mdash;</li>
+            </ul>
+            <nav class="main-nav">
+                <div class="main-nav_wrapper">
+                    <ul>
+                        <li>
+                            <a href="index.html" class="main-nav-link">Home</a>
+                        </li>
+                        <li><span class="main-nav-link home-link">About Us&nbsp;&nbsp;<svg viewBox="0 0 1024 2048" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" class="caret-down"><path d="M1024 832c0 17.333-6.333 32.333-19 45l-448 448c-12.667 12.667-27.667 19-45 19s-32.333-6.333-45-19L19 877C6.333 864.333 0 849.333 0 832s6.333-32.333 19-45 27.667-19 45-19h896c17.333 0 32.333 6.333 45 19s19 27.667 19 45z"></path></svg></span>
+                            <ul class="submenu">
+                                <li><a href="the_team.html#the-team" class="submenu-nav-link">The Team</a></li>
+                                <li><a href="the_team.html#publishers-section" class="submenu-nav-link">Publishers</a></li>
+                            </ul>
+                        </li>
+                        <li><span class="main-nav-link">Game Info&nbsp;&nbsp;<svg viewBox="0 0 1024 2048" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" class="caret-down"><path d="M1024 832c0 17.333-6.333 32.333-19 45l-448 448c-12.667 12.667-27.667 19-45 19s-32.333-6.333-45-19L19 877C6.333 864.333 0 849.333 0 832s6.333-32.333 19-45 27.667-19 45-19h896c17.333 0 32.333 6.333 45 19s19 27.667 19 45z"></path></svg></span>
+                            <ul class="submenu">
+                                <li><a href="inspiration.html" class="submenu-nav-link">Inspiration</a></li>
+                                <li><a href="features.html" class="submenu-nav-link">Features</a></li>
+                                <li><a href="gameplay.html" class="submenu-nav-link">Gameplay</a></li>
+                            </ul>
+                        </li>
+                        <li><span class="main-nav-link">Support&nbsp;&nbsp;<svg viewBox="0 0 1024 2048" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" class="caret-down"><path d="M1024 832c0 17.333-6.333 32.333-19 45l-448 448c-12.667 12.667-27.667 19-45 19s-32.333-6.333-45-19L19 877C6.333 864.333 0 849.333 0 832s6.333-32.333 19-45 27.667-19 45-19h896c17.333 0 32.333 6.333 45 19s19 27.667 19 45z"></path></svg></span>
+                            <ul class="submenu">
+                                <li><a href="https://www.kickstarter.com/projects/letsgamedev/spindle-an-action-adventure-about-the-death-and-a-pig/posts" target="_blank" class="submenu-nav-link">Press</a></li>
+                                <li><a href="funding.html" class="submenu-nav-link">Donate</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contact.html" class="main-nav-link">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <nav id="mobile-nav">
+        <div class="mobile-nav_wrapper">
+            <ul>
+                <li>
+                    <a href="index.html" class="main-nav-link home-link">Home</a>
+                </li>
+                <li>
+                    <span class="main-nav-link mobile-nav-link" onclick="toggleNavLinks(0)">About Us&nbsp;&nbsp;<svg viewBox="0 0 1024 2048" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" class="caret-down mobile-caret-down"><path d="M1024 832c0 17.333-6.333 32.333-19 45l-448 448c-12.667 12.667-27.667 19-45 19s-32.333-6.333-45-19L19 877C6.333 864.333 0 849.333 0 832s6.333-32.333 19-45 27.667-19 45-19h896c17.333 0 32.333 6.333 45 19s19 27.667 19 45z"></path></svg></span>
+                    <ul class="mobile_submenu">
+                        <li><a href="the_team.html#the-team" class="submenu-nav-link">The Team</a></li>
+                        <li><a href="the_team.html#publishers-section" class="submenu-nav-link">Publishers</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="main-nav-link mobile-nav-link" onclick="toggleNavLinks(1)">Game Info&nbsp;&nbsp;<svg viewBox="0 0 1024 2048" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" class="caret-down mobile-caret-down"><path d="M1024 832c0 17.333-6.333 32.333-19 45l-448 448c-12.667 12.667-27.667 19-45 19s-32.333-6.333-45-19L19 877C6.333 864.333 0 849.333 0 832s6.333-32.333 19-45 27.667-19 45-19h896c17.333 0 32.333 6.333 45 19s19 27.667 19 45z"></path></svg></span>
+                    <ul class="mobile_submenu">
+                        <li onclick="resetMobileNav()"><a href="inspiration.html" class="submenu-nav-link">Inspiration</a></li>
+                        <li onclick="resetMobileNav()"><a href="features.html" class="submenu-nav-link">Features</a></li>
+                        <li onclick="resetMobileNav()"><a href="gameplay.html" class="submenu-nav-link">Gameplay</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="main-nav-link mobile-nav-link" onclick="toggleNavLinks(2)">Support&nbsp;&nbsp;<svg viewBox="0 0 1024 2048" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" class="caret-down mobile-caret-down"><path d="M1024 832c0 17.333-6.333 32.333-19 45l-448 448c-12.667 12.667-27.667 19-45 19s-32.333-6.333-45-19L19 877C6.333 864.333 0 849.333 0 832s6.333-32.333 19-45 27.667-19 45-19h896c17.333 0 32.333 6.333 45 19s19 27.667 19 45z"></path></svg></span>
+                    <ul class="mobile_submenu">
+                        <li onclick="resetMobileNav()"><a href="https://www.kickstarter.com/projects/letsgamedev/spindle-an-action-adventure-about-the-death-and-a-pig/posts" target="_blank" class="submenu-nav-link">Press</a></li>
+                        <li onclick="resetMobileNav()"><a href="funding.html" class="submenu-nav-link">Donate</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html" class="main-nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main class="main-body_wrapper">
+        <section id="hero-section">
+            <div id="hero-section_wrapper">
+                <img src="icons/spindle_logo.png" alt="">
+                    <p>Free the world from chaos!</p>
+                    <a href="https://gotm.io/letsgamedev/spindle" rel="noopener" class="button-link">Play Demo</a>
+            </div>
+            <a href="#about-game-section" class="scroll-tip-link"><img src="icons/scroll.svg" class="scroll-tip" alt=""/></a>
+        </section>
+        <section id="about-game-section" class="base-grid">
+            <h1 class="section-headers black-header">About the Game</h1>
+            <div id="about-game-section_wrapper" class="section_wrapper">
+                <p>Let us introduce you to the world of <b>SPINDLE</b>, where nobody dies anymore... A world of chaos... and pure disorder.
+                    As the one and only <i>Death</i> 💀, you have the mission to restore order and free those who are suffering.
+                    But to clean things up, you first need to figure out what is going on and why.
+                    So grab your scythe, ask your little pig-friend 🐖 to join the journey, and let's go adventuring! 🗺️</p>
+                <p>
+                <hr>
+                <p><b>Learn more about the game's features...</b></p>
+                <a href="features.html" class="button-link black-link">Game Features</a>
+            </div>
+        </section>
+        <section id="backers-section" class="base-grid">
+            <h1 class="section-headers white-header">Supported By</h1>
+            <div id="backers-section_wrapper">
+                <figure class="backers-img-flex">
+                    <img src="images/deck13.jpg" alt="" class="backers-image">
+                    <a href="https://www.deck13.com/" class="button-link backer-button" rel="noopener" target="_blank">Deck 13</a>
+                </figure>
+                <figure class="backers-img-flex">
+                    <img src="images/logo_nfgames_white.png" alt="" class="backers-image">
+                    <a href="" class="button-link backer-button">NoFuel</a>
+                </figure>
+                <figure class="backers-img-flex">
+                    <img src="images/logo_techel_white.png" alt="" class="backers-image">
+                    <a href="https://www.patreon.com/letsgamedev" rel="noopener" target="_blank" class="button-link backer-button">Techel</a>
+                </figure>
+            </div>
+        </section>
+        <section id="donate-section" class="base-grid">
+            <h1 class="section-headers white-header">Donate</h1>
+            <div id="donate-section_wrapper" class="section_wrapper">
+            <img src="images/donate.png" alt="" />
+                <p>For all the people who couldn't be part of the Kickstarter backers, we offer the opportunity of using PayPal. This money will count to our Kickstarter Stretch Goals.</p>
+                <p>Please consider donating to speed up development and make our game even more awesome!</p>
+                <a href="https://www.paypal.com/paypalme/spindlegame" rel="noopener" target="_blank" class="button-link donate-link">Donate</a>
+                </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="site-footer_wrapper">
+            <img src="images/logo-gamedev.gif" alt="" width="400px">
+            <div id="footer_info-links">
+                <div id="email-append">Let's GameDev GmbH
+                    <br>Gervinusstraße 15-21
+                    <br>60359 Frankfurt am Main
+                    <br>
+                    <form id="email-verification-form" action="" method="get" onsubmit="saveVerification(); revealEmail(); return false">
+                        <ul>
+                            <li>
+                                <label for="verify-email-request" id="email-label">Email Verification</label>
+                                <input type="number" id="verify-email-request" required="required" placeholder="2*sqrt(2+2) = ">
+                                <input type="submit" id="email-reveal-button" name="email-submit" value="Reveal Email" onclick="">
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+            </div>
+            <div id="footer_company-links">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about_us.html">About Us</a></li>
+                    <li><a href="">Games</a></li>
+                    <li><a href="the_team.html#publishers-section">Publisher</a></li>
+                </ul>
+            </div>
+            <div id="footer_spindle-links">
+                <h3>Spindle</h3>
+                <ul>
+                    <li><a href="inspiration.html">Inspiration</a></li>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="gameplay.html">Gameplay</a></li>
+                    <li><a href="https://gotm.io/letsgamedev/spindle" rel="noopener">Play Now</a></li>
+                </ul>
+            </div>
+            <div id="footer_support-links">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="https://www.kickstarter.com/projects/letsgamedev/spindle-an-action-adventure-about-the-death-and-a-pig/posts" rel="noopener">Press</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="https://www.paypal.com/paypalme/spindlegame" rel="noopener">Donate</a></li>
+                    <li><a href="https://www.lets-gamedev.de/datenschutz.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <p>Let's GameDev &copy; 2021
+            <br>Website designed with 💖 by Saad Billah</p>
+    </footer>
+</body>
+</html>

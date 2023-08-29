@@ -1,0 +1,122 @@
+
+
+/* This is the hero-banner-thingy section */
+
+@media screen and (max-width: 480px) {
+    .backers-image {
+        max-width: 70%;
+    }
+}
+
+#hero-section {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: minmax(0, 1fr);
+    justify-content: center;
+    align-items: center;
+    background: ghostwhite;
+}
+
+#hero-section_wrapper {
+    background: ghostwhite;
+    background: url('images/spindle_poster_horizontal_1500px.jpg') center;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1366px));
+    grid-template-rows: minmax(0, 1fr);
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 0 0 1366px rgba(0,0,0,0.4);
+    padding: 8rem 2rem 10rem 2rem;
+}
+
+#hero-section_wrapper > img {
+    max-width: 100%;
+    max-height: 50%;
+    margin: 0 auto 2.5% auto;
+}
+
+#hero-section_wrapper > p {
+    text-transform: uppercase;
+    font-weight: bold;
+    display: block;
+    max-width: 50ch;
+    font-size: 2rem;
+    text-align: center;
+    margin: 3% auto 5% auto;
+    line-height: 1.5em;
+    text-shadow: 0 0 12px rgba(0, 0, 0, 1);
+}
+
+#hero-section_wrapper > a {
+    margin: 0 auto;
+}
+/* This is about-game section */
+
+#about-game-section {
+    background: ghostwhite;
+    padding: 0 0 3rem 0;
+}
+
+#about-game-section_wrapper > p {
+    color: black;
+    text-align: center;
+    margin: 20px 0;
+    line-height: 2em;
+    max-width: 65ch;
+    padding: 0 40px;
+}
+
+/* This is backers section */
+
+#backers-section {
+    background: rgb(25,41,56);
+    padding: 2rem 0 5rem 0;
+}
+
+#backers-section_wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    flex: 0 1 1920px;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.backers-img-flex {
+    margin: 0 2%;
+}
+
+.backers-image {
+    display: flex;
+    margin: 0 auto;
+    padding: 10% 13% 15% 13%;
+    max-width: 350px;
+    align-self: center;
+    justify-self: center;
+}
+
+/* Donate section */
+
+#donate-section {
+    background: #0B1420;
+    padding: 2rem 0 3rem 0;
+}
+
+#donate-section_wrapper > img {
+    display: block;
+    max-width: 60%;
+    padding: 2% 0 4% 0;
+    margin: 3% auto;
+}
+
+#donate-section_wrapper > p {
+    color: ghostwhite;
+    text-align: center;
+    margin: 20px 0;
+    line-height: 2em;
+    max-width: 50ch;
+    padding: 0 20px;
+}
+.donate-link {
+    margin: 7% auto 5% auto;
+}

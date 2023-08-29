@@ -1,0 +1,8 @@
+#about-us-section {
+    background: rgb(25,41,56)
+}
+
+.section_wrapper > ul {
+    text-align: center;
+    margin: 1em 0 1em 0;
+}

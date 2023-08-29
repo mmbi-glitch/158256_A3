@@ -1,0 +1,72 @@
+body {
+    background: black;
+}
+
+.main-body_wrapper {
+    background: #0B1420;
+}
+
+.base-grid {
+    background: #0B1420;
+}
+
+.section-headers {
+    margin-bottom: 0;
+}
+
+h3 {
+    display: block;
+    text-align: center;
+    padding: 5% 0;
+    text-shadow: 2px 2px 11px rgba(0, 0, 0, 1);
+    font-size: 1.5rem;
+}
+
+/* This is features 1 section */
+
+.ebony-back {
+    background: rgb(25,41,56);
+}
+
+.features_odd {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    max-width: 50ch;
+    text-align: center;
+    margin: 5% auto;
+}
+
+.features_odd > p, .features_even > p {
+    display: block;
+    padding: 0 5%;
+    margin: 5% auto;
+    line-height: 1.5em;
+}
+
+/* This is features 2 section */
+
+.features_even {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    max-width: 50ch;
+    text-align: center;
+    margin: 5% auto;
+}
+
+.aspect-ratio-container {
+    border: none;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px 7px rgba(83, 189, 246,0.82);
+    -webkit-box-shadow: 1px 1px 10px 7px rgba(83, 189, 246,0.82);
+    -moz-box-shadow: 1px 1px 10px 7px rgba(83, 189, 246,0.82);
+}
+
+.grid-image-odd {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.grid-image-even {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}

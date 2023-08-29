@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:data="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@500;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="basic_styles.css">
+    <link rel="stylesheet" href="funding.css">
+    <link rel="stylesheet" href="mobile_styles.css">
+    <link rel="icon" href="icons/favicon.ico">
+    <script src="verifyEmail.js"></script>
+    <script src="mobileMenu.js"></script>
+    <title>SPINDLE - Donate</title>
+</head>
+<body>
+    <header class="site-header">
+        <div class="site-header_wrapper">
+            <a href="#" id="logo_link">
+                <img src="icons/spindle_logo.png" alt="spindle logo" width="158" height="44"/>
+            </a>
+            <span id="side-nav_divider">|</span>
+            <ul id="mobile_button" onclick="toggleMobileNav()">
+                <li id="first-bar">&mdash;</li>
+                <li id="second-bar">&mdash;</li>
+                <li id="third-bar">&mdash;</li>
+            </ul>
+            <nav class="main-nav">
+                <div class="main-nav_wrapper">
+                    <ul>
+                        <li>
+                            <a href="index.html" class="main-nav-link">Home</a>
+                        </li>
+                        <li><span class="main-nav-link">About Us&nbsp;&nbsp;<svg viewBox="0 0 1024 2048" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" class="caret-down"><path d="M1024 832c0 17.333-6.333 32.333-19 45l-448 448c-12.667 12.667-27.667 19-45 19s-32.333-6.333-45-19L19 877C6.333 864.333 0 849.333 0 832s6.333-32.333 19-45 27.667-19 45-19h896c17.333 0 32.333 6.333 45 19s19 27.667 19 45z"></path></svg></span>
+                            <ul class="submenu">
+                                <li><a href="the_team.html#the-team" class="submenu-nav-link">The Team</a></li>
+                                <li><a href="the_team.html#publishers-section" class="submenu-nav-link">Publishers</a></li>
+                            </ul>
+                        </li>
+                        <li><span class="main-nav-link">Game Info&nbsp;&nbsp;<svg viewBox="0 0 1024 2048" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" class="caret-down"><path d="M1024 832c0 17.333-6.333 32.333-19 45l-448 448c-12.667 12.667-27.667 19-45 19s-32.333-6.333-45-19L19 877C6.333 864.333 0 849.333 0 832s6.333-32.333 19-45 27.667-19 45-19h896c17.333 0 32.333 6.333 45 19s19 27.667 19 45z"></path></svg></span>
+                            <ul class="submenu">
+                                <li><a href="inspiration.html" class="submenu-nav-link">Inspiration</a></li>
+                                <li><a href="features.html" class="submenu-nav-link">Features</a></li>
+                                <li><a href="gameplay.html" class="submenu-nav-link">Gameplay</a></li>
+                            </ul>
+                        </li>
+                        <li><span class="main-nav-link">Support&nbsp;&nbsp;<svg viewBox="0 0 1024 2048" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" class="caret-down"><path d="M1024 832c0 17.333-6.333 32.333-19 45l-448 448c-12.667 12.667-27.667 19-45 19s-32.333-6.333-45-19L19 877C6.333 864.333 0 849.333 0 832s6.333-32.333 19-45 27.667-19 45-19h896c17.333 0 32.333 6.333 45 19s19 27.667 19 45z"></path></svg></span>
+                            <ul class="submenu">
+                                <li><a href="https://www.kickstarter.com/projects/letsgamedev/spindle-an-action-adventure-about-the-death-and-a-pig/posts" target="_blank" class="submenu-nav-link">Press</a></li>
+                                <li><a href="funding.html" class="submenu-nav-link">Donate</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contact.html" class="main-nav-link">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <nav id="mobile-nav">
+        <div class="mobile-nav_wrapper">
+            <ul>
+                <li>
+                    <a href="index.html" class="main-nav-link home-link">Home</a>
+                </li>
+                <li>
+                    <span class="main-nav-link mobile-nav-link" onclick="toggleNavLinks(0)">About Us&nbsp;&nbsp;<svg viewBox="0 0 1024 2048" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" class="caret-down mobile-caret-down"><path d="M1024 832c0 17.333-6.333 32.333-19 45l-448 448c-12.667 12.667-27.667 19-45 19s-32.333-6.333-45-19L19 877C6.333 864.333 0 849.333 0 832s6.333-32.333 19-45 27.667-19 45-19h896c17.333 0 32.333 6.333 45 19s19 27.667 19 45z"></path></svg></span>
+                    <ul class="mobile_submenu">
+                        <li><a href="the_team.html#the-team" class="submenu-nav-link">The Team</a></li>
+                        <li><a href="the_team.html#publishers-section" class="submenu-nav-link">Publishers</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="main-nav-link mobile-nav-link" onclick="toggleNavLinks(1)">Game Info&nbsp;&nbsp;<svg viewBox="0 0 1024 2048" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" class="caret-down mobile-caret-down"><path d="M1024 832c0 17.333-6.333 32.333-19 45l-448 448c-12.667 12.667-27.667 19-45 19s-32.333-6.333-45-19L19 877C6.333 864.333 0 849.333 0 832s6.333-32.333 19-45 27.667-19 45-19h896c17.333 0 32.333 6.333 45 19s19 27.667 19 45z"></path></svg></span>
+                    <ul class="mobile_submenu">
+                        <li onclick="resetMobileNav()"><a href="inspiration.html" class="submenu-nav-link">Inspiration</a></li>
+                        <li onclick="resetMobileNav()"><a href="features.html" class="submenu-nav-link">Features</a></li>
+                        <li onclick="resetMobileNav()"><a href="gameplay.html" class="submenu-nav-link">Gameplay</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="main-nav-link mobile-nav-link" onclick="toggleNavLinks(2)">Support&nbsp;&nbsp;<svg viewBox="0 0 1024 2048" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" class="caret-down mobile-caret-down"><path d="M1024 832c0 17.333-6.333 32.333-19 45l-448 448c-12.667 12.667-27.667 19-45 19s-32.333-6.333-45-19L19 877C6.333 864.333 0 849.333 0 832s6.333-32.333 19-45 27.667-19 45-19h896c17.333 0 32.333 6.333 45 19s19 27.667 19 45z"></path></svg></span>
+                    <ul class="mobile_submenu">
+                        <li onclick="resetMobileNav()"><a href="https://www.kickstarter.com/projects/letsgamedev/spindle-an-action-adventure-about-the-death-and-a-pig/posts" target="_blank" class="submenu-nav-link">Press</a></li>
+                        <li onclick="resetMobileNav()"><a href="funding.html" class="submenu-nav-link">Donate</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html" class="main-nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main class="main-body_wrapper" style="background: white">
+        <section id="funding-section" class="base-grid">
+            <h1 class="section-headers white-header">Donate</h1>
+            <div id="funding-section_wrapper" class="section_wrapper">
+                <img src="images/donate.png" alt="" />
+                <p>Lots of people don't have a credit card or have missed our Kickstarter. Therefore, we want to give these people the opportunity to be part of Spindle by offering PayPal.
+                    Just click on the Donate button and then on Send.</p>
+                <a href="https://www.paypal.com/paypalme/spindlegame" rel="noopener" target="_blank" class="button-link donate-link">Donate</a>
+                <p>We want to keep it simple, so there are only a few options now. Scroll down to see the plans that are available!</p>
+                <a href="#plans-section" class="scroll-tip-link"><img src="icons/scroll.svg" class="scroll-tip" alt=""/></a>
+            </div>
+        </section>
+        <section id="plans-section" class="base-grid">
+            <h1 class="section-headers black-header">Plans</h1>
+            <div id="plans-section_wrapper" class="section_wrapper" style="color: black">
+                <table>
+                    <caption><h2 class="h2-headers_down">Pick a Plan Right for You</h2></caption>
+                    <thead>
+                        <tr>
+                            <th><h3>Perks of Each Plan</h3></th>
+                            <th>
+                                <h3>Donor</h3>
+                                <hr>
+                                <p>€5</p>
+                            </th>
+                            <th>
+                                <h3>Backer</h3>
+                                <hr>
+                                <p>€15</p>
+                            </th>
+                            <th>
+                                <h3>Gamer</h3>
+                                <hr>
+                                <p>€50</p>
+                            </th>
+                            <th>
+                                <h3>Funder</h3>
+                                <hr>
+                                <p>€100</p>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Discord Role: Backer</td><td>&check;</td><td>&check;</td><td>&check;</td><td>&check;</td>
+                        </tr>
+                        <tr>
+                            <td>No. of Digital Game Keys</td><td>&mdash;</td><td>1x</td><td>2x</td><td>3x</td>
+                        </tr>
+                        <tr>
+                            <td>In-Game Book Entry</td><td>&mdash;</td><td>&mdash;</td><td>&check;</td><td>&check;</td>
+                        </tr>
+                        <tr>
+                            <td>Access to Soundtrack</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&check;</td>
+                        </tr>
+                        <tr class="last-row">
+                            <td>Early Bird Access</td><td>&mdash;</td><td>&mdash;</td><td>&check;</td><td>&check;</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="mobile-table" class="responsive-table">
+                <div class="table-caption"><h2 class="h2-headers h2-headers_down">Pick a Plan Right for You</h2></div>
+                <div class="table-head">
+                    <div class="table-row">
+                        <div class="table-header">
+                            <h4>Donor</h4>
+                            <hr>
+                            <p>€5</p>
+                        </div>
+                        <div class="table-header" >
+                            <h4>Backer</h4><hr>
+                            <p>€15</p>
+                        </div>
+                        <div class="table-header" >
+                            <h4>Gamer</h4>
+                            <hr>
+                            <p>€50</p>
+                        </div>
+                        <div class="table-header">
+                            <h4>Funder</h4>
+                            <hr>
+                            <p>€100</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="table-body">
+                    <div id="mobile-first-row" class="table-row bg-text text-1">
+                        <div class="table-cell hidden-text">R</div><div class="table-cell hidden-text">R</div><div class="table-cell hidden-text">R</div><div class="table-cell hidden-text">R</div>
+                    </div>
+                    <div class="table-row">
+                        <div class="table-cell">&check;</div><div class="table-cell">&check;</div><div class="table-cell" >&check;</div><div class="table-cell" >&check;</div>
+                    </div>
+                    <div class="table-row bg-text text-2">
+                        <div class="table-cell hidden-text">R</div><div class="table-cell hidden-text">R</div><div class="table-cell hidden-text">R</div><div class="table-cell hidden-text">R</div>
+                    </div>
+                    <div class="table-row">
+                        <div class="table-cell">&mdash;</div><div class="table-cell">1x</div><div class="table-cell" >2x</div><div class="table-cell" >3x</div>
+                    </div>
+                    <div class="table-row bg-text text-3">
+                        <div class="table-cell hidden-text">R</div><div class="table-cell hidden-text">R</div><div class="table-cell hidden-text">R</div><div class="table-cell hidden-text">R</div>
+                    </div>
+                    <div class="table-row">
+                        <div class="table-cell" >&mdash;</div><div class="table-cell" >&mdash;</div><div class="table-cell" >&check;</div><div class="table-cell">&check;</div>
+                    </div>
+                    <div class="table-row bg-text text-4">
+                        <div class="table-cell hidden-text">R</div><div class="table-cell hidden-text">R</div><div class="table-cell hidden-text">R</div><div class="table-cell hidden-text">R</div>
+                    </div>
+                    <div class="table-row">
+                        <div class="table-cell">&mdash;</div><div class="table-cell">&mdash;</div><div class="table-cell">&mdash;</div><div class="table-cell">&check;</div>
+                    </div>
+                    <div class="table-row bg-text text-5">
+                        <div class="table-cell hidden-text">R</div><div class="table-cell hidden-text">R</div><div class="table-cell hidden-text">R</div><div class="table-cell hidden-text">R</div>
+                    </div>
+                    <div class="table-row last-row">
+                        <div class="table-cell">&mdash;</div><div class="table-cell">&mdash;</div><div class="table-cell">&check;</div><div class="table-cell">&check;</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="help-section" class="base-grid">
+            <h1 class="section-headers">Need Help?</h1>
+            <div id="help-section_wrapper">
+                <img src="images/contact.jpg" alt="">
+                <p>Things can go wrong sometimes. If something went wrong with your order, or you are confused about something, please do get in touch with us as soon as possible.
+                    Note: if you want more keys than what our basic plans give, just add more money (&euro;15 / key) and mention that in the contact message. </p>
+                <a href="#" rel="noopener" target="_blank" class="button-link">Contact Us</a>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="site-footer_wrapper">
+            <img src="images/logo-gamedev.gif" alt="">
+            <div id="footer_info-links">
+                <div id="email-append">Let's GameDev GmbH
+                    <br>Gervinusstraße 15-21
+                    <br>60359 Frankfurt am Main
+                    <br>
+                    <form id="email-verification-form" action="" method="get" onsubmit="saveVerification(); revealEmail(); return false">
+                        <ul>
+                            <li>
+                                <label for="verify-email-request" id="email-label">Email Verification</label>
+                                <input type="number" id="verify-email-request" required="required" placeholder="2*sqrt(2+2) = ">
+                                <input type="submit" id="email-reveal-button" name="email-submit" value="Reveal Email" onclick="">
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+            </div>
+            <div id="footer_company-links">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about_us.html">About Us</a></li>
+                    <li><a href="">Games</a></li>
+                    <li><a href="the_team.html#publishers-section">Publisher</a></li>
+                </ul>
+            </div>
+            <div id="footer_spindle-links">
+                <h3>Spindle</h3>
+                <ul>
+                    <li><a href="inspiration.html">Inspiration</a></li>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="gameplay.html">Gameplay</a></li>
+                    <li><a href="https://gotm.io/letsgamedev/spindle" rel="noopener">Play Now</a></li>
+                </ul>
+            </div>
+            <div id="footer_support-links">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="https://www.kickstarter.com/projects/letsgamedev/spindle-an-action-adventure-about-the-death-and-a-pig/posts" rel="noopener">Press</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="https://www.paypal.com/paypalme/spindlegame" rel="noopener">Donate</a></li>
+                    <li><a href="https://www.lets-gamedev.de/datenschutz.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <p>Let's GameDev &copy; 2021
+            <br>Website designed with 💖 by Saad Billah</p>
+    </footer>
+</body>
+</html>

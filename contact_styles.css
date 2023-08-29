@@ -1,0 +1,73 @@
+body {
+    background: black;
+}
+.main-body_wrapper {
+    background: #0B1420;
+}
+.responsive-form {
+    margin: 5% auto 0 auto;
+    max-width: 100%;
+}
+fieldset {
+    padding: 5%;
+    border: 2px solid #53BDF6;
+    margin: 0 5%;
+    text-align: center;
+}
+legend {
+    text-align: center;
+}
+.form-field {
+    margin-top: 25px;
+    width: 100%;
+}
+label {
+    text-align: left;
+}
+
+.grid-box {
+    background: white;
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    border: 1px solid black;
+    box-shadow: 1px 1px 5px 2px rgb(0, 0, 0);
+    -webkit-box-shadow: 1px 1px 5px 2px rgb(0, 0, 0);
+    -moz-box-shadow: 1px 1px 5px 2px rgb(0, 0, 0);
+}
+.grid-box > p {
+    color: black;
+}
+.grid-image {
+    align-self: center;
+    justify-self: stretch;
+    margin: 0;
+}
+
+.side-by-side_grid {
+    margin: 0;
+    grid-row-gap: 5%;
+}
+
+#contact-section {
+    background: #53BDF6;
+}
+
+#email-reveal-button {
+    color: black;
+    background: #53BDF6;
+    padding: 9px 10px;
+    margin-top: 10px;
+    border: 2px solid ghostwhite;
+    border-radius: 5px;
+    width: 45%;
+    display: inline-block;
+}
+
+#verify-email-request {
+    width: 45%;
+}
+
+
