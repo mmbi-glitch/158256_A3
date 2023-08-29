@@ -1,5 +1,5 @@
 # 158256_A3
-An appealing and functional website created using only vanilla HTML, CSS, and JS.
+Designing an appealing and functional website using only vanilla HTML, CSS, and JS.
 ## Massey University Disclaimer
 This is a submission for an assignment for the Massey University course 158.256 - Web Application Design. Under no circumstances is it to be copied and submitted anywhere as plagiarised work.
 ## Assignment Requirements (in Brief)
